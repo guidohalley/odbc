@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Guido Halley | INCADE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            color: white;
+            background-color: #0b0b0b;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .main {
+            justify-content: center;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .add-btn {
+            margin-top: 10px;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>Boostrap | Guido Halley | INCADE</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8">
+                    <label for="productoId">ID</label>
+                    <input class="form-control" id="productoId" type="text" placeholder="Id del producto">
+                </div>
+
+                <div class="col-10 col-md-8">
+                    <label for="productoNombre">Nombre del Producto</label>
+                    <input class="form-control" id="productoNombre" type="text"
+                        placeholder="Ingresa el nombre del producto">
+                </div>
+
+                <div class="col-10 col-md-8">
+                    <label for="productoDescripcion">Descripción</label>
+                    <input class="form-control" id="productoDescripcion" type="text"
+                        placeholder="Descripción del producto">
+                </div>
+
+                <div class="col-10 col-md-8">
+                    <label for="productoPrecio">Precio</label>
+                    <input class="form-control" id="productoPrecio" type="text" placeholder="Coloca el precio">
+                </div>
+
+                <div class="col-10 col-md-8">
+                    <input class="btn btn-success add-btn" type="submit" value="Enviar">
+                    <a href="info.html" class="btn btn-info btn-sm">Complejidad  Ciclomatica</a>
+                </div>
+            </form>
+
+            <div class="col-10 col-md-10">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <tr>
+                            <td>1</td>
+                            <td>Computadora</td>
+                            <td>Ryzen 5 16GB RAM 420SSD</td>
+                            <td>U$D 750</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Eliminar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
