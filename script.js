@@ -1,8 +1,9 @@
 var selectedRow = null;
 
-// Mostrar aleartas
+// Mostrar alertas
 
 function showAlert(message, className) {
+    
     const div = document.createElement("div");
 
     div.className = `alert alert-${className}`;
@@ -24,6 +25,7 @@ function clearFields() {
     document.querySelector('#productoDescripcion').value = "";
     document.querySelector('#productoPrecio').value = "";
 }
+
 //Agregar Producto
 
 document.querySelector('#student-form').addEventListener("submit", (e) => {
@@ -69,7 +71,7 @@ document.querySelector('#student-form').addEventListener("submit", (e) => {
     }
 });
 
-// editar 
+// Editar 
 
 document.querySelector("#student-list").addEventListener("click", (e) => {
     target = e.target;
