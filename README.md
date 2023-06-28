@@ -9,7 +9,6 @@
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/version-v1.0-blue">
-  <img src="https://img.shields.io/github/license/usuario/repo">
 </p>
 
 <!-- Instalación -->
